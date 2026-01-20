@@ -1,6 +1,6 @@
 # Create .env file
 echo "Creating .env.example file..."
-cat > .envtouch << 'EOF'
+cat > .env << 'EOF'
 # IBKR Gateway Configuration
 IBKR_GATEWAY_HOST=localhost
 IBKR_GATEWAY_PORT=5000

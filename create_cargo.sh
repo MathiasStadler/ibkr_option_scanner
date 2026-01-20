@@ -12,7 +12,9 @@ cd $PROJECT_NAME
 
 # Create directory structure FIRST
 echo "Creating directory structure..."
-mkdir -p src/{models,api,utils}
+mkdir -p src/models
+mkdir -p src/api
+mkdir -p src/utils
 mkdir -p config tests data results
 
 # Now add dependencies to Cargo.toml
