@@ -1,0 +1,8 @@
+Symbol,Name,Last Sale,Net Change,Percent Change,Market Cap,Country,IPO Year,Volume,Sector,Industry
+AAPL,Apple Inc.,150.00,+1.50,+1.01%,2.5T,USA,1980,50000000,Technology,Computer Hardware
+GOOGL,Alphabet Inc.,100.00,+0.50,+0.50%,1.3T,USA,2004,25000000,Technology,Internet
+MSFT,Microsoft Corporation,250.00,+2.00,+0.81%,1.9T,USA,1986,30000000,Technology,Software
+AMZN,Amazon.com Inc.,110.00,+1.00,+0.92%,1.1T,USA,1997,40000000,Consumer Cyclical,Internet Retail
+TSLA,Tesla Inc.,180.00,+3.00,+1.69%,570B,USA,2010,80000000,Consumer Cyclical,Auto Manufacturers
+META,Meta Platforms Inc.,230.00,+2.50,+1.10%,590B,USA,2012,20000000,Technology,Internet
+NVDA,NVIDIA Corporation,300.00,+5.00,+1.69%,740B,USA,1999,25000000,Technology,Semiconductors
