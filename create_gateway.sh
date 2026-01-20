@@ -103,45 +103,4 @@ impl GatewayClient {
     }
 }
 EOF
-            .send()
-            .await
-            .with_context(|| format!("Failed to send request to {}", url))?;
-        
-        if !response.status().is_success() {
-            let status = response.status();
-            let text = response.text().await.unwrap_or_default();
-            warn!("Request failed with status {}: {}", status, text);
-            return Err(anyhow::anyhow!("HTTP {}: {}", status, text));
-        }
-        
-        response.text()
-            .await
-            .with_context(|| format!("Failed to read response from {}", url))
-    }
-
-    pub async fn post(&self, endpoint: &str, body: &str) -> Result<String> {
-        let url = format!("{}{}", self.base_url, endpoint);
-        info!("Making POST request to: {}", url);
-        
-        let response = self.client
-            .post(&url)
-            .header("accept", "application/json")
-            .header("content-type", "application/json")
-            .body(body.to_string())
-            .send()
-            .await
-            .with_context(|| format!("Failed to send request to {}", url))?;
-        
-        if !response.status().is_success() {
-            let status = response.status();
-            let text = response.text().await.unwrap_or_default();
-            warn!("Request failed with status {}: {}", status, text);
-            return Err(anyhow::anyhow!("HTTP {}: {}", status, text));
-        }
-        
-        response.text()
-            .await
-            .with_context(|| format!("Failed to read response from {}", url))
-    }
-}
-EOF
+            
